@@ -1,0 +1,7 @@
+version: pipelines/v0.1
+name: MAD Data Import
+timeout: 0
+data_components:
+- tap-mad-landscape
+- Warehouse
+- dbt
