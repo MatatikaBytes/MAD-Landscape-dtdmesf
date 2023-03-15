@@ -1,5 +1,5 @@
 version: datasets/v0.2
-source: analyze/channels/cbinsights
+source: cbinsights
 title: Total funding by company
 questions: What is the total funding by company?
 description: |-

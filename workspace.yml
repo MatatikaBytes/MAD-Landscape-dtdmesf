@@ -2,6 +2,10 @@ version: workspaces/v0.1
 name: MAD Landscape
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
+  APP_MENU_ITEMS: '[{"name": "news", "faIcon": "home"}, {"name": "explore", "faIcon": "hashtag"}, {"name": "library", "faIcon": "list", "label": "Library"}, {"name": "starred", "faIcon": "star"}, {"name": "help", "faIcon": "envelope", "label": "Contact Us"}]'
+  HOME_PAGE: news
+  HELP_DATASET_ALIAS: contact-us
+  HELP_PAGE_TITLE: Contact Us
 dataset_paths:
 - analyze/datasets
 - .meltano/analyze/datasets

@@ -1,5 +1,5 @@
 version: datasets/v0.2
-source: analyze/channels/cbinsights
+source: cbinsights
 title: All company data
 questions: How can I export all data?
 description: |-

@@ -1,0 +1,16 @@
+version: datasets/v0.2
+title: Contact Us
+source: matatika
+description: |-
+  <div style="display: flex; justify-content: left;">
+    <div style="width: auto;">
+      Get in touch:</br></br>
+      Email: aphethean@matatika.com</br></br>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: left;">
+    <div style="width: auto; padding-right: 15px;">
+      <p style="font-size: 30px;">About Us</p>
+      Power intelligent business relationships with company, client, and alternative data from a single space.</br></br>
+    </div>
+  </div>
