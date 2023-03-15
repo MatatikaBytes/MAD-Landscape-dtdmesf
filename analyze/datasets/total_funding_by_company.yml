@@ -1,0 +1,47 @@
+version: datasets/v0.2
+source: analyze/channels/cbinsights
+title: Total funding by company
+questions: What is the total funding by company?
+description: |-
+  Total funding by company
+  #insights
+metadata: |-
+  {
+    "name": "mad",
+    "label": "Total funding by company", 
+    "related_table": {
+      "columns": [
+        {"name": "company", "label": "Company", "description": "Company"}
+      ],
+      "aggregates": [
+        {"name": "total_funding", "label": "Funding", "description": "Total funding"}
+      ]
+    }
+  }
+visualisation: |-
+   {
+      "chartjs-chart": {
+         "chartType": "bar",
+         "options": {
+            "scales": {
+               "y": {
+                  "title": {
+                     "text": "Total funding",
+                     "display": true
+                  },
+                  "ticks": {
+                     "beginAtZero": true
+                  }
+               }
+            }
+         }
+      }
+   }
+query: |-
+  select
+    company as "mad.company",
+    sum(funding_numeric::numeric) as "mad.total_funding"
+  from mad_landscape
+  where funding_numeric is not null
+  group by company
+  order by 2 desc
