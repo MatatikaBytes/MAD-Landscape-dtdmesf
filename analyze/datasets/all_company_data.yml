@@ -1,0 +1,36 @@
+version: datasets/v0.2
+source: analyze/channels/cbinsights
+title: All company data
+questions: How can I export all data?
+description: |-
+  A simple dataset useful for exporting all data.
+  #insights
+metadata: |-
+  {
+    "name": "mad",
+    "label": "All company data", 
+    "related_table": {
+      "columns": [
+        {"name": "category", "label": "Category", "description": "Category"},
+        {"name": "company", "label": "Company", "description": "Company"},
+        {"name": "description", "label": "Description", "description": "Description"},
+        {"name": "founded", "label": "Founded", "description": "Founded"},
+        {"name": "total_funding", "label": "Funding", "description": "Total funding"}
+      ],
+      "aggregates": [
+      ]
+    }
+  }
+visualisation: |-
+   {
+      "html-table": {}
+   }
+query: |-
+  select
+    category as "mad.category",
+    company as "mad.company",
+    description as "mad.description",
+    founded as "mad.founded",
+    total_funding as "mad.total_funding"
+  from mad_landscape
+  order by 2 desc
