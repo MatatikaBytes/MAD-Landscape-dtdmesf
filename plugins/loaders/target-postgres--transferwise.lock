@@ -7,7 +7,7 @@
   "repo": "git+https://github.com/Matatika/pipelinewise-target-postgres@v0.1.0",
   "pip_url": "git+https://github.com/Matatika/pipelinewise-target-postgres@v0.1.0",
   "description": "Loader for Postgres Data Warehouse\n\nThe World's Most Advanced Open Source Relational Database\n\n## Settings\n\n### User\nPostgres user\n\n### Password\nPostgres password\n\n### Host\nPostgres host\nExample: `test-host.db.elephantsql.com`\n\n### Port\nPostgres port\nExample: `5432`\n\n### Database Name\nPostgres database name\n\n### Default Target Schema\nName of the schema where tables will be created (no database prefix)",
-  "logo_url": "https://localhost:3443/assets/logos/loaders/postgres.png",
+  "logo_url": "/assets/logos/loaders/postgres.png",
   "settings": [
     {
       "name": "user",
